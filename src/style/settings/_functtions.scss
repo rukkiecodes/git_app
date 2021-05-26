@@ -1,0 +1,11 @@
+@function color($color_name) {
+  @return map-get($colors, $color_name);
+}
+
+@function border($border_name) {
+  @return map-get($borders, $border_name);
+}
+
+@function size($size_name) {
+  @return map-get($sizes, $size_name);
+}

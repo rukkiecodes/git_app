@@ -1,0 +1,44 @@
+$desktop: 767.9px;
+$mobile: 768px;
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+
+@mixin git_break {
+  @media (max-width: 956px) {
+    @content;
+  }
+}
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait and Landscape */
+
+@mixin iPad_1_2_mini_air_both {
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    @content;
+  }
+}
+
+/* Portrait */
+
+@mixin iPad_1_2_mini_air_portrait {
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    @content;
+  }
+}
+
+/* Landscape */
+
+@mixin iPad_1_2_mini_air_landscape {
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+    @content;
+  }
+}

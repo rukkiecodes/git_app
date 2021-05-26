@@ -1,0 +1,30 @@
+$colors: (
+  primary: #24292e,
+  accent: #fff,
+  grey: #f6f8fa,
+  light_grey: rgba(139, 139, 139, 0.329),
+  lighter_grey: rgba(255, 255, 255, 0.596),
+  link_text: rgba(0, 0, 0, 0.6),
+  dark_grey: #0d1117,
+  dark_link_text: rgba(0, 0, 0, 0.9),
+  git_orange: #f9826c,
+  light_git_blue: #2189ff9a,
+  git_blue: #0366d6,
+  git_greeen: #2ea44f,
+  dark_git_green: #22853e
+);
+
+$borders: (
+    light_border: 1px solid rgba(139, 139, 139, 0.329),
+    regular_border: 2px solid color(light_git_blue)
+);
+
+$sizes: (
+    size_1: .9rem,
+    size_2: 1rem,
+    size_3: 1.2rem,
+    size_4: 1.5rem,
+    size_5: 1.8rem
+);
+
+@import "./functtions";

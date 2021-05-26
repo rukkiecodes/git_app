@@ -1,0 +1,418 @@
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  overflow-x: hidden;
+}
+
+.main_nav {
+  background: #24292e;
+  height: 3.8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1.5em;
+}
+
+@media (max-width: 768px) {
+  .main_nav {
+    height: 3em;
+    width: 100%;
+    position: relative;
+  }
+}
+
+.main_nav .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1em;
+}
+
+.main_nav .left .menu_button {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .main_nav .left .menu_button {
+    display: initial;
+  }
+}
+
+.main_nav .left .octicon {
+  fill: #fff;
+}
+
+@media (max-width: 768px) {
+  .main_nav .left .octicon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+.main_nav .left .input {
+  height: 1.7em;
+  width: 250px;
+  position: relative;
+  margin-top: -4px;
+}
+
+@media (max-width: 768px) {
+  .main_nav .left .input {
+    display: none;
+  }
+}
+
+@media (max-width: 956px) {
+  .main_nav .left .input {
+    width: 200px;
+  }
+}
+
+.main_nav .left .input input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: 1px solid rgba(139, 139, 139, 0.329);
+  border-radius: 6px;
+  background: none;
+  padding-left: 1em;
+  padding-right: 3em;
+  color: #fff;
+}
+
+.main_nav .left .input input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.main_nav .left .input input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.main_nav .left .input input::-ms-input-placeholder {
+  color: #fff;
+}
+
+.main_nav .left .input input::placeholder {
+  color: #fff;
+}
+
+.main_nav .left .input button {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: inherit;
+  border: 1px solid rgba(139, 139, 139, 0.329);
+  color: #fff;
+  border-radius: 6px;
+}
+
+.main_nav .left .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+  .main_nav .left .links {
+    display: none;
+  }
+}
+
+.main_nav .left .links a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: initial;
+  margin-right: 1em;
+  outline: none;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  font-size: 0.9rem;
+}
+
+.main_nav .left .links a:hover {
+  color: rgba(255, 255, 255, 0.596);
+}
+
+.main_nav .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+}
+
+.main_nav .right .drop_down1 {
+  width: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .main_nav .right .drop_down1 {
+    display: none;
+  }
+}
+
+.main_nav .right .drop_down1 .avatar {
+  width: 70%;
+}
+
+.main_nav .right .drop_down1 .avatar img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.main_nav .right .drop_down1 span {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.main_nav .right .drop_down2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .main_nav .right .drop_down2 {
+    display: none;
+  }
+}
+
+.main_nav .right .notification {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.main_nav .right .notification .bell {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.main_nav .right .notification .dot {
+  position: absolute;
+  top: 2px;
+  right: 8px;
+  z-index: 1;
+  width: 10px;
+  height: 10px;
+  background: #0366d6;
+  border-radius: 50%;
+}
+
+.mobile_nav {
+  display: none;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  top: 48px;
+  width: 100%;
+  z-index: 100;
+}
+
+@media (max-width: 768px) {
+  .mobile_nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #24292e;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1em;
+  }
+}
+
+.mobile_nav .input {
+  height: 2em;
+  width: 100%;
+  position: relative;
+  margin-top: -4px;
+}
+
+.mobile_nav .input input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: 1px solid rgba(139, 139, 139, 0.329);
+  border-radius: 6px;
+  background: #0d1117;
+  padding-left: 1em;
+  padding-right: 3em;
+  color: #fff;
+}
+
+.mobile_nav .input input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.mobile_nav .input input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.mobile_nav .input input::-ms-input-placeholder {
+  color: #fff;
+}
+
+.mobile_nav .input input::placeholder {
+  color: #fff;
+}
+
+.mobile_nav .input button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 1;
+  width: 22px;
+  height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: inherit;
+  border: 1px solid rgba(139, 139, 139, 0.329);
+  color: #fff;
+  border-radius: 6px;
+}
+
+.mobile_nav .links {
+  width: 100%;
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.mobile_nav .links a {
+  width: 100%;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  height: 3em;
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobile_nav .links a .avatar {
+  width: 40px;
+  margin-right: 1em;
+}
+
+.mobile_nav .links a .avatar img {
+  width: 100%;
+}
+
+.mobile_nav .links a span {
+  font-size: 1.2rem;
+  margin-right: 0.5em;
+}
+
+.hide_mobile_nav {
+  display: none;
+}
+/*# sourceMappingURL=index_nav.css.map */
